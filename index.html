@@ -11,27 +11,27 @@
         <nav class="main-navigation">
           <div class="logo">
           <!-- Добавить картинку логотипа и размеры -->
-            <img src="" width="" height="" alt="">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип">
           </div>
           <ul class="menu">
             <li class="menu-item">
-              <a href="">Каталог</a>
+              <a href="catalog.html">Каталог</a>
               <ul class="menu2">
-                <li><a href="">Новинки</a></li>
-                <li><a href="">Сливочное</a></li>
-                <li><a href="">Щербеты</a></li>
-                <li><a href="">Фруктовый лед</a></li>
-                <li><a href="">Мелорин</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li class="menu-item"><a href="">Доставка и оплата</a></li>
-            <li class="menu-item"><a href="">О Компании</a></li>
+            <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+            <li class="menu-item"><a href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="header-button">
           <div class="search">
             <div class="search-button">
-              <a href="">Поиск</a>
+              <a href="#">Поиск</a>
             </div>
             <div class="search-form">
               <form>
@@ -41,7 +41,7 @@
           </div>
           <div class="login">
             <div class="login-button">
-              <a href="">Вход</a>
+              <a href="#">Вход</a>
             </div>
             <div class="login-form">
               <form>
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="basket-button">
-            <a href="">Корзина</a>
+            <a href="#">Корзина</a>
           </div>
         </div>
         <div class="header-contact">
@@ -61,58 +61,103 @@
     </header>
 
     <main class="container">
-      <div class="slider">
+
+      <section class="slider">
+        <h2 class="visually-hidden">Слайдер</h2>
+
         <div class="slide1">
           <div>Крем-брюле и пломбир с малиновым джемом</div>
-          <a href="">Давайте оба</a>
+          <a href="#">Давайте оба</a>
         </div>
         <!-- Второй и третий слайд сделала такими же как и первый, потому что пока не нашла информацию для них, но судя по превью должно быть три слайда -->
         <div class="slide2">
           <div>Крем-брюле и пломбир с малиновым джемом</div>
-          <a href="">Давайте оба</a>
+          <a href="#">Давайте оба</a>
         </div>
         <div class="slide3">
           <div>Крем-брюле и пломбир с малиновым джемом</div>
-          <a href="">Давайте оба</a>
+          <a href="#">Давайте оба</a>
         </div>
-      </div>
+        
+      </section>
 
-      <div class="present">
-        <div class="present raspberry">
+      <section class="present">
+        <div class="present-raspberry">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="">Хочу варенье!</a>
+          <a href="#">Хочу варенье!</a>
         </div>
-        <div class="present chocolate">
+        <div class="present-chocolate">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a href="">Хочу шоколадки!</a>
+          <a href="#">Хочу шоколадки!</a>
         </div>
-      </div>
+      </section>
 
 
-      <div class="catalog">
-        <div class="catalog-item">
-          <a href=""><img src="" width="" height="" alt=""></a>
-          <div class="price">310 &#8381;<span>/кг</span></div>
-          <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </div>
-        <div class="catalog-item">
-          <a href=""><img src="" width="" height="" alt=""></a>
-          <div class="price">380 &#8381;<span>/кг</span></div>
-          <a href="">Сливочно-кофейное с кусочками шоколада</a>
-        </div>
-        <div class="catalog-item">
-          <a href=""><img src="" width="" height="" alt=""></a>
-          <div class="price">355 &#8381;<span>/кг</span></div>
-          <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </div>
-        <div class="catalog-item">
-          <a href=""><img src="" width="" height="" alt=""></a>
-          <div class="price">415 &#8381;<span>/кг</span></div>
-          <a href="">Сливочное крем-брюле с карамельной подливкой</a>
-        </div>
-      </div>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+
+        <ul class="calatog-list">
+          <li  class="catalog-item">
+            <h3>
+              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            </h3>
+            <p>
+              <a href="#">
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              </a>
+            </p>
+            <p>
+              <b>310 &#8381;<span>/кг</span></b>
+            </p>
+          </li>
+
+          <li  class="catalog-item">
+            <h3>
+              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            </h3>
+            <p>
+              <a href="#">
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-кофейное с кусочками шоколада">
+              </a>
+            </p>
+            <p>
+              <b>380 &#8381;<span>/кг</span></b>
+            </p>
+          </li>
+
+          <li  class="catalog-item">
+            <h3>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </h3>
+            <p>
+              <a href="#">
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              </a>
+            </p>
+            <p>
+              <b>355 &#8381;<span>/кг</span></b>
+            </p>
+          </li>
+
+          <li  class="catalog-item">
+            <h3>
+              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            </h3>
+            <p>
+              <a href="#">
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
+              </a>
+            </p>
+            <p>
+              <b>415 &#8381;<span>/кг</span></b>
+            </p>
+          </li>
+
+        </ul>
+      </section>
 
 
       <div class="about-us">
@@ -129,7 +174,7 @@
       <div class="blog">
         <article class="blog-news">
           <h2>Новое в нашем блоге</h2>
-          <a href="">10 способов сервировки<br>фруктовых щербетов к<br>столу</a>
+          <a href="#">10 способов сервировки<br>фруктовых щербетов к<br>столу</a>
         </article>
       </div>
 
@@ -151,31 +196,35 @@
           8 812 450-25-25<br>
           (с 10 до 20 ежедневно)
         </p>
-        <a href=""><h2>Форма обратной связи</h2></a>
+        <a href="#"><h2>Форма обратной связи</h2></a>
       </div>
 
     </main>
 
 
     <footer class="main-footer">
-      
-      <div class="social">
-        <a href="">twitter</a>
-        <a href="">instagram</a>
-        <a href="">facebook</a>
-        <a href="">vkontakte</a>
+
+      <div class="footer-social">
+        <ul>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">vkontakte</a></li>
+        </ul>
       </div>
 
-      <div class="">
-        <a href="">Для поставщиков</a>
-        <a href="">О производстве</a>
-        <a href="">Наши документы</a>
-        <a href="">Экологические стандарты</a>
+      <div class="subinfo">
+        <ul>
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
       </div>
 
-      <div class="develop">
-        <a href=">"<img src="" width="" height="" alt=""></a>
-        <p>Сделано в <a  href="">HTML Academy</a> &#169; 2017</p>
+      <div class="footer-copyright">
+        <a href="//htmlacademy.ru"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy"></a>
+        <p>Сделано в <a  href="//htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
       </div>
 
     </footer>
