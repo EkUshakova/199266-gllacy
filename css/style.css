@@ -1,3 +1,43 @@
 body  {
-    background-color: #849d8f;
+  background-color: #849d8f;
+}
+
+.skroll {
+  width: 176px;
+  background: #f8f7f4;
+  height: 4px;
+  margin: 20px;
+  position: relative;
+  /*opacity: 0.5;*/
+}
+
+.skroll_left,
+.skroll_right {
+  position: absolute;
+  display: block;
+  width: 20px;
+  background-image: url("img/filter-button.png");
+  height: 22px;
+  border-radius: 50%;
+  top: -8px;
+  z-index: 1;
+  border: none;
+  opacity: 1;
+}
+
+.skroll_left {
+  left: 16px;
+}
+
+.skroll_right {
+  right: 53px;
+}
+
+.skroll_field {
+  width: 107px;
+  height: 4px;
+  background: #f8f7f4;
+  position: absolute;
+  left: 16px;
+  opacity: 1;
 }
