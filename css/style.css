@@ -121,7 +121,7 @@ body  {
   color: #ffffff;
 }
 
-.catalog-item a h3 {
+.catalog-item h2 {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -130,21 +130,19 @@ body  {
   color: #ffffff;
 }
 
-.catalog-item a b {
+.catalog-item b {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  text-decoration: none;
   color: #ffffff;
 }
 
-.catalog-item a span {
+.catalog-item span {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -406,7 +404,7 @@ ul {
 
 .about-us {
   background-color: #ffffff;
-  background-size: cover;
+  background-size: 70%;
   background-clip: border-box;
   border-radius: 20px;
   background-image: url("../img/waffle_pattern.jpg");
