@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -30,7 +31,7 @@
           </ul>
         </nav>
 
-        <div class="search">
+        <div class="search-navigation">
             <a class="search-form" href="#" aria-label="Поиск">
               <img src="img/magnifier.png" width="17" height="17" alt="Поиск">
             </a>
@@ -43,8 +44,9 @@
         </div>
 
         <div class="user-navigation">
-          <a class="login-link" href="login.html" aria-label="Вход">
+          <a href="login.html" aria-label="Вход">
             <img src="img/input.png" width="21" height="19" alt="Вход">
+            <p>Вход</p>
           </a>
           <form class="user" method="post" action="#">
             <p>
@@ -57,8 +59,8 @@
             </p>
             <button type="submit">Войти</button>
             <p>
-              <a href="#" aria-label="Забыли пароль?">Забыли пароль?</a>
-              <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+              <a class="login-link" href="#" aria-label="Забыли пароль?">Забыли пароль?</a>
+              <a class="login-link" href="#" aria-label="Новая регистрация">Новая регистрация</a>
             </p>
           </form>
         </div>
@@ -113,19 +115,19 @@
               <legend>Жирность:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="filter-zero">
+                  <input class="filter-input filter-input-radio" type="radio" name="fat" id="filter-zero">
                   <label for="filter-zero">0%</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="filter-10" checked>
+                  <input class="filter-input filter-input-radio" type="radio" name="fat" id="filter-10" checked>
                   <label for="filter-10">до 10%</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="filter-30">
+                  <input class="filter-input filter-input-radio" type="radio" name="fat" id="filter-30">
                   <label for="filter-30">до 30%</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" id="filter-more30">
+                  <input class="filter-input filter-input-radio" type="radio" name="fat" id="filter-more30">
                   <label for="filter-more30">выше 30%</label>
                 </li>
               </ul>
@@ -135,23 +137,23 @@
               <legend>Наполнители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="шоколадные" id="filter-chocolate" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="шоколадные" id="filter-chocolate" checked>
                   <label for="filter-chocolate">шоколадные</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="сахарные присыпки" id="filter-sugar" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="сахарные присыпки" id="filter-sugar" checked>
                   <label for="filter-sugar">сахарные присыпки</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="фрукты" id="filter-fruit">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="фрукты" id="filter-fruit">
                   <label for="filter-fruit">фрукты</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="сиропы" id="filter-syrup">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="сиропы" id="filter-syrup">
                   <label for="filter-syrup">сиропы</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="джемы" id="filter-jam">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="джемы" id="filter-jam">
                   <label for="filter-jam">джемы</label>
                 </li>
               </ul>
@@ -330,16 +332,24 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button social-button-twitter" href="https://twitter.com" aria-label="Твиттер"></a>
+            <a class="social-button social-button-twitter" href="https://twitter.com" aria-label="Твиттер">
+              <img src="img/twitter.png" width="38" height="38" alt="Твиттер">
+            </a>
           </li>
           <li>
-            <a class="social-button social-button-instagram" href="https://www.instagram.com/" aria-label="Инстаграм"></a>
+            <a class="social-button social-button-instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
+              <img src="img/instagram.png" width="38" height="38" alt="Инстаграм">
+            </a>
           </li>
           <li>
-            <a class="social-button social-button-facebook" href="https://www.facebook.com" aria-label="Фейсбук"></a>
+            <a class="social-button social-button-facebook" href="https://www.facebook.com" aria-label="Фейсбук">
+              <img src="img/facebook.png" width="38" height="38" alt="Фейсбук">
+            </a>
           </li>
           <li>
-            <a class="social-button social-button-vkontakte" href="https://vk.com" aria-label="Вконтакте"></a>
+            <a class="social-button social-button-vkontakte" href="https://vk.com" aria-label="Вконтакте">
+              <img src="img/vk.png" width="38" height="38" alt="Вконтакте">
+            </a>
           </li>
         </ul>
       </div>

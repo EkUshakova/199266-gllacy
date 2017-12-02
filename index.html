@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -30,7 +31,7 @@
           </ul>
         </nav>
 
-          <div class="search">
+          <div class="search-navigation">
               <a class="search-form" href="#" aria-label="Поиск">
                 <img src="img/magnifier.png" width="17" height="17" alt="Поиск">
               </a>
@@ -43,8 +44,9 @@
           </div>
 
           <div class="user-navigation">
-            <a class="login-link" href="login.html" aria-label="Вход">
+            <a href="login.html" aria-label="Вход">
               <img src="img/input.png" width="21" height="19" alt="Вход">
+              <p>Вход</p>
             </a>
             <form class="user" method="post" action="#">
               <p>
@@ -57,8 +59,8 @@
               </p>
               <button type="submit">Войти</button>
               <p>
-                <a href="#" aria-label="Забыли пароль?">Забыли пароль?</a>
-                <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+                <a class="login-link" href="#" aria-label="Забыли пароль?">Забыли пароль?</a>
+                <a class="login-link" href="#" aria-label="Новая регистрация">Новая регистрация</a>
               </p>
             </form>
           </div>
@@ -213,12 +215,16 @@
 
 
       <div class="mail-distrib">
-        <!-- <img src="img/waffle_pattern.jpg" width="734" height="433" alt="Вафля"> -->
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form method="post" action="#">
-          <input type="text" name="e_mail" value="Электронная почта">
-          <input type="submit" value="Отправить" aria-label="Отправить">
-        </form>
+        <div class="mail-distrib-fill">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form method="post" action="#">
+            <p>
+              <label for="user-post"></label>
+              <input id="user-post" type="text" name="e_mail" placeholder="Электронная почта" value="">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
 
 
@@ -228,11 +234,14 @@
         <p>
           Адрес главного офиса и<br>
           офлайн-магазина:<br>
-          ул. Большая Конюшенная 19/8, Санкт-Петербург
+          <b>ул. Большая Конюшенная<br>
+            19/8, Санкт-Петербург</b>
         </p>
         <p>
-          Для заказов по телефону:<br>
-          8 812 450-25-25<br>
+          Для заказов по телефону:
+        </p>
+        <p class="map-contact">
+          <b>8 812 450-25-25</b><br>
           (с 10 до 20 ежедневно)
         </p>
 
@@ -240,6 +249,7 @@
         <a href="#"><h2>Форма обратной связи</h2></a>
 
         <form class="user" method="post" action="#">
+          <h2>Мы обязательно вам ответим!</h2>
           <p>
             <label for="user-name"></label>
             <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
@@ -267,23 +277,31 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button social-button-twitter" href="https://twitter.com" aria-label="Твиттер"></a>
+            <a class="social-button social-button-twitter" href="https://twitter.com" aria-label="Твиттер">
+              <img src="img/twitter.png" width="38" height="38" alt="Твиттер">
+            </a>
           </li>
           <li>
-            <a class="social-button social-button-instagram" href="https://www.instagram.com/" aria-label="Инстаграм"></a>
+            <a class="social-button social-button-instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
+              <img src="img/instagram.png" width="38" height="38" alt="Инстаграм">
+            </a>
           </li>
           <li>
-            <a class="social-button social-button-facebook" href="https://www.facebook.com" aria-label="Фейсбук"></a>
+            <a class="social-button social-button-facebook" href="https://www.facebook.com" aria-label="Фейсбук">
+              <img src="img/facebook.png" width="38" height="38" alt="Фейсбук">
+            </a>
           </li>
           <li>
-            <a class="social-button social-button-vkontakte" href="https://vk.com" aria-label="Вконтакте"></a>
+            <a class="social-button social-button-vkontakte" href="https://vk.com" aria-label="Вконтакте">
+              <img src="img/vk.png" width="38" height="38" alt="Вконтакте">
+            </a>
           </li>
         </ul>
       </div>
 
       <div class="subinfo">
         <ul>
-          <li><a href="#">Для поставщиков</a></li>
+          <li class="bold"><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
