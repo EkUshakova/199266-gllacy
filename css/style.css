@@ -73,7 +73,7 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 10px;
-  margin-left: 27px;
+  margin-left: 0px;
   margin-bottom: 2px;
   width: 180px;
 }
@@ -242,7 +242,7 @@ a {
 }
 
 .user-navigation>li:first-child {
-  margin-left: 22px;
+  margin-left: -4px;
 }
 
 .search-button,
@@ -305,6 +305,7 @@ a {
   background-color: #f8f7f4;
 }
 
+
 .search-form input {
   width: 300px;
   padding: 10px 10px;
@@ -323,7 +324,7 @@ a {
 }
 
 .search-form input:focus {
-  padding: 20px;
+  padding: 10px;
   border: 2px solid rgba(46,136,228,0.52);
   сolor: #323232;
 }
@@ -700,7 +701,7 @@ main h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
+  margin: auto;
   padding: 0;
   margin-top: -8px;
   margin-bottom: 30px;
@@ -759,8 +760,7 @@ main h1 {
 }
 
 .slider {
-  width: 1105px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 20px;
   position: relative;
   padding-top: 245px;
@@ -889,6 +889,7 @@ main h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: auto;
   padding: 0;
   padding-top: 42px;
 
@@ -961,6 +962,7 @@ main h1 {
 }
 
 .hits {
+  margin: auto;
   padding-top: 40px;
   min-height: 363px;
 }
@@ -978,8 +980,8 @@ main h1 {
 }
 
 .about-us {
+  margin: auto;
   min-height: 256px;
-  margin: 0px;
   padding: 22px 20px;
   border-radius: 15px;
   color: #323232;
@@ -1003,6 +1005,7 @@ main h1 {
 }
 
 .useful-information {
+  margin: auto;
   padding: 0;
   margin: 40px 0px;
   min-height: 220px;
@@ -1123,9 +1126,9 @@ main h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
   position: relative;
   height: 427px;
-  margin: 0 -27px;
   margin-bottom: 1px;
   color: #323232;
   background-color: #c7c6c5;
@@ -1137,12 +1140,12 @@ main h1 {
 
 .map-form {
   position: absolute;
-  top: 62px;
-  right: 28px;
-  width: 252px;
-  padding-top: 27px;
+  top: 63px;
+  right: 0px;
+  width: 253px;
+  padding-top: 26px;
   padding-left: 25px;
-  padding-right: 24px;
+  padding-right: 22px;
   border-radius: 15px;
 
   font-size: 14px;
@@ -1494,7 +1497,8 @@ a .bold {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding: 7px 0px 7px 6px;
+  padding: 7px 0px 7px 0px;
+  width: 195px;
 
   color: #323232;
   font-size: 14px;
@@ -1509,7 +1513,7 @@ a .bold {
 }
 
 .filter-sort {
-  padding-right: 25px;
+  padding-right: 0px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
