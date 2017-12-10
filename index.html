@@ -28,7 +28,7 @@
               <li class="menu-item menu-item-catalog">
                 <a href="catalog.html" aria-label="Каталог"><span class="catalog-label-link">Каталог</span></a>
                 <ul class="menu2">
-                  <li class="menu2-item"><a href="#" aria-label="Новинки"><p>Новинки</p></a></li>
+                  <li class="menu2-item menu2-new"><a href="#" aria-label="Новинки">Новинки</a><hr></li>
                   <li class="menu2-item"><a href="catalog.html" aria-label="Сливочное">Сливочное</a></li>
                   <li class="menu2-item"><a href="#" aria-label="Щербеты">Щербеты</a></li>
                   <li class="menu2-item"><a href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
@@ -79,7 +79,7 @@
                 </div>
               </li>
               <li class="basket">
-                <a class="basket-button" href="#" aria-label="Корзина">Пусто</a>
+                <a class="basket-button basket-button1" href="#" aria-label="Корзина">Пусто</a>
               </li>
             </ul>
           </div>
@@ -187,10 +187,10 @@
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
           <li class="about-us-list2">
-            <p>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
           <li class="about-us-list3">
-            <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li class="about-us-list4">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -215,11 +215,11 @@
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div class="map-form">
-          <p class="map-address">Адрес главного офиса и<br>офлайн-магазина:<br>
+          <p class="map-address">Адрес главного офиса и<br>оффлайн-магазина:<br>
             <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
           </p>
           <p class="map-contact">Для заказов по телефону:<br>
-            <b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)
+            <b>8 812 450-25-25</b>(с 10 до 20 ежедневно)
           </p>
           <a href="feedback.html" class="button map-contact-button">Форма обратной связи</a>
         </div>
@@ -276,7 +276,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип магазина 'Глейси'">
         </a>
-        <p>Сделано в <a class="copiright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
+        <p>Сделано в <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
 
@@ -301,61 +301,8 @@
       </div>
     </section>
 
-    <script>
-      var link = document.querySelector(".map-contact-button");
-
-      var popup = document.querySelector(".modal-form");
-      var close = popup.querySelector(".feedback-button-close");
-
-      var form = popup.querySelector("form");
-      var name = popup.querySelector("[name=user-name]");
-      var email = popup.querySelector("[name=user-email]");
-      var text = popup.querySelector("[class=feedback-text]");
-
-      var storage = localStorage.getItem("name");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-
-        if (storage) {
-          name.value = storage;
-          email.focus();
-        } else {
-            login.focus();
-          }
-
-        });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        popup.classList.add("modal-error");
-      });
-
-
-      form.addEventListener("submit", function (evt) {
-        if (!name.value || !email.value || !text.value) {
-          evt.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-          console.log("Заполните поля формы");
-        } else {
-            localStorage.setItem("name", name.value);
-          }
-        });
-
-        window.addEventListener("keydown", function (evt) {
-          if (evt.keyCode === 27) {
-            if (popup.classList.contains("modal-show")) {
-              popup.classList.remove("modal-show");
-              popup.classList.add("modal-error");
-            }
-          }
-        });
-
-      </script>
+    <script type="text/javascript" src="js/javascriptscript.js">
+    </script>
 
   </body>
 </html>
